@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio — rezteche</title>
+  <style>
+    :root {
+      --bg:#0b1220; --card:#131a2a; --border:#1f2937; --text:#e5e7eb;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Helvetica,Arial,sans-serif}
+    header{max-width:1100px;margin:32px auto 20px;display:flex;align-items:center;justify-content:space-between;padding:0 16px}
+    .title{font-size:28px;margin:0}
+    a.back{color:#93c5fd;text-decoration:none}
+    .grid{max-width:1100px;margin:0 auto 40px;display:grid;gap:18px;padding:0 16px;
+          grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px}
+    .thumb{width:100%;aspect-ratio:16/9;background:#0f172a;border:1px dashed #334155;border-radius:10px;
+           display:flex;align-items:center;justify-content:center;font-size:13px;opacity:.8;margin-bottom:12px}
+    h3{margin:0 0 8px;font-size:18px}
+    p{margin:0 0 12px;opacity:.8;font-size:14px;line-height:1.4}
+    .row{display:flex;gap:10px}
+    a.btn{flex:1;text-align:center;text-decoration:none;background:#3b82f6;color:white;padding:10px 12px;border-radius:10px;font-weight:600}
+    a.btn.secondary{background:#22c55e;color:#081018}
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="title">Portfolio</h1>
+    <a class="back" href="index.html">← Back to home</a>
+  </header>
+
+  <section class="grid">
+    <!-- Example project card 1 -->
+    <article class="card">
+      <div class="thumb">Screenshot / logo</div>
+      <h3>Landing Page</h3>
+      <p>Lightweight static site served with Nginx (Docker).</p>
+      <div class="row">
+        <a class="btn" href="./index.html">Open</a>
+        <a class="btn secondary" href="https://github.com/reza76py/myWebSite-landingPage" target="_blank" rel="noopener">Source</a>
+      </div>
+    </article>
+
+    <!-- Example project card 2 -->
+    <article class="card">
+      <div class="thumb">App #2</div>
+      <h3>Space Truss Viewer</h3>
+      <p>3D visualization prototype. (Update link later.)</p>
+      <div class="row">
+        <a class="btn" href="#" aria-disabled="true">Open</a>
+        <a class="btn secondary" href="#" aria-disabled="true">Source</a>
+      </div>
+    </article>
+
+    <!-- Add more <article class="card"> ... </article> blocks as needed -->
+  </section>
+</body>
+</html>
