@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* minimal custom classes (no CSS variables) */
+.main-page{
+    @apply grid min-h-screen place-items-center bg-gray-800 text-slate-900;
+}
+.landing-text{
+    @apply text-2xl font-bold text-blue-300;
+}

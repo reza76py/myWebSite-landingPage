@@ -1,0 +1,14 @@
+{
+  "name": "landing-static",
+  "private": true,
+  "scripts": {
+  "build:css": "tailwindcss -i ./src/styles/tailwind.css -o ./public/assets/styles.css --minify",
+  "dev:css": "tailwindcss -i ./src/styles/tailwind.css -o ./public/assets/styles.css --watch"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1",
+    "tailwindcss": "^3.4.17"
+  }
+}
