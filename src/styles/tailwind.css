@@ -3,9 +3,13 @@
 @tailwind utilities;
 
 /* minimal custom classes (no CSS variables) */
-.main-page{
-    @apply grid min-h-screen place-items-center bg-gray-800 text-slate-900;
-}
-.landing-text{
-    @apply text-2xl font-bold text-yellow-300;
+
+
+@layer base {
+  body {
+    @apply bg-gray-700 text-gray-200 font-sans;
+  }  
+  p {
+    @apply text-base text-gray-100 p-4 rounded;
+  }
 }
